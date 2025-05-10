@@ -41,7 +41,9 @@ const FamilyAccountPage = () => {
       })
         .then(res => res.json())
         .then(ai => setAiTips(t => ({ ...t, [idx]: ai })))
-        .catch(() => {});
+        .catch(() => {
+          // Error intentionally ignored
+        });
     });
   }, [members]);
 
@@ -62,7 +64,7 @@ const FamilyAccountPage = () => {
       setMembers([ { ...defaultMember } ]);
       setFamilyMembers(1);
     } catch (err: any) {
-
+      // Error intentionally ignored
     } finally {
       setLoading(false);
     }

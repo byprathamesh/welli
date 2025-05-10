@@ -2,11 +2,17 @@ import React, { useEffect, useState } from 'react';
 import { SafeAreaView, Text, Button, View, StyleSheet } from 'react-native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { NavigationContainer } from '@react-navigation/native';
-import AsyncStorage from '@react-native-async-storage/async-storage';
 import { createClient } from '@supabase/supabase-js';
 
-const SUPABASE_URL = process.env.EXPO_PUBLIC_SUPABASE_URL;
-const SUPABASE_ANON_KEY = process.env.EXPO_PUBLIC_SUPABASE_ANON_KEY;
+/* global global, process */
+
+// Polyfill process.env for React Native
+if (typeof process === 'undefined') {
+  global.process = { env: {} };
+}
+
+const SUPABASE_URL = (typeof process !== 'undefined' && process.env.EXPO_PUBLIC_SUPABASE_URL) || '';
+const SUPABASE_ANON_KEY = (typeof process !== 'undefined' && process.env.EXPO_PUBLIC_SUPABASE_ANON_KEY) || '';
 const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
 const Stack = createNativeStackNavigator();

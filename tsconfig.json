@@ -25,12 +25,16 @@
   },
   "include": [
     "src",
+    "api",
+    "welli-mobile",
     "*.ts",
-    "*.tsx"
+    "*.tsx",
+    "welli-mobile/**/*.ts",
+    "welli-mobile/**/*.tsx",
+    "tailwind.config.ts",
+    "vite.config.ts"
   ],
   "exclude": [
-    "vite.config.ts",
-    "tailwind.config.ts",
     "node_modules",
     "dist"
   ],
