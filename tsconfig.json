@@ -38,7 +38,8 @@
     "node_modules",
     "dist",
     "tailwind.config.ts",
-    "vite.config.ts"
+    "vite.config.ts",
+    "welli-mobile"
   ],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
