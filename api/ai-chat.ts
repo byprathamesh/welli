@@ -1,7 +1,8 @@
 const HF_API_URL = 'https://api-inference.huggingface.co/models/meta-llama/Llama-3.1-8B-Instruct';
 const HF_API_KEY = process.env.HF_API_KEY || process.env.VITE_HF_API_KEY;
 
-export default async function handler(req, res) {
+// Handler for AI chat API (forced rebuild)
+export default async function handler(req: any, res: any) {
   if (req.method !== 'POST') {
     return res.status(405).json({ error: 'Method not allowed' });
   }
