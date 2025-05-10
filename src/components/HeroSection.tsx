@@ -169,12 +169,9 @@ const HeroSection = () => {
           </Link>
           <Link to="/blood-bank" className="hover:scale-105 transition-transform duration-300">
             <div className="h-full rounded-xl shadow-lg border-2 bg-blue-100 border-blue-300 p-6 text-center flex flex-col items-center justify-center">
-              <div className="flex gap-2 mb-4">
+              <div className="mb-4">
                 <div className="bg-white p-4 rounded-full inline-block shadow-md">
                   <Droplet className="w-8 h-8 text-blue-600" />
-                </div>
-                <div className="bg-white p-4 rounded-full inline-block shadow-md">
-                  <Heart className="w-8 h-8 text-purple-600" />
                 </div>
               </div>
               <h3 className="text-xl font-semibold mb-2 text-welli-text-dark">Blood & Organ Bank</h3>
@@ -183,12 +180,9 @@ const HeroSection = () => {
           </Link>
           <Link to="/reminders" className="hover:scale-105 transition-transform duration-300">
             <div className="h-full rounded-xl shadow-lg border-2 bg-yellow-100 border-yellow-300 p-6 text-center flex flex-col items-center justify-center">
-              <div className="flex gap-2 mb-4">
+              <div className="mb-4">
                 <div className="bg-white p-4 rounded-full inline-block shadow-md">
                   <Bell className="w-8 h-8 text-yellow-600" />
-                </div>
-                <div className="bg-white p-4 rounded-full inline-block shadow-md">
-                  <Bot className="w-8 h-8 text-pink-600" />
                 </div>
               </div>
               <h3 className="text-xl font-semibold mb-2 text-welli-text-dark">Assistant</h3>
