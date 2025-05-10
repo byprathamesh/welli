@@ -10,9 +10,7 @@ import {
   Tablet,
   AlertTriangle,
   Droplet,
-  Heart,
   Bell,
-  Bot
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import {
